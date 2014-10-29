@@ -41,34 +41,13 @@ public class PlayGameTest {
     	
     }
 
-//    @Test
-//    public void test1() {
-//       endUser.is_the_home_page();
-//       
-//       endUser.walk_1();
-//
-//    }
+
     @Test
-    public void test2() {
+    public void test() {
        endUser.is_the_home_page();
        
-       endUser.walk_2();
+       endUser.walk();
     }
-//    @Test
-//    public void test3(){
-//    	endUser.is_the_home_page();
-//       endUser.walk_2();
-//    }
-//    @Test
-//    public void test4(){
-//    	endUser.is_the_home_page();
-//       endUser.walk_2();
-//    }
-//    @Test
-//    public void test5(){
-//    	endUser.is_the_home_page();
-//       endUser.walk_2();
-//
-//    }
+
    
 } 

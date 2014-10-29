@@ -36,40 +36,9 @@ public class EndUserSteps extends ScenarioSteps {
     public void go_down(){
     	dictionaryPage.go_down();
     }
+    
     @Step
-    public void walk_1 (){
-    	
-    	long startTime = System.currentTimeMillis();
-    	long elapsedTime=0;
-//    	int i= 0;
-    	int old_score = 0;
-    	
-    	while (elapsedTime < 60*1000){
-    		old_score = Integer.parseInt(dictionaryPage.get_score_value());
-//        	System.out.println("old score: " + old_score);
-//    		i++;
-    			dictionaryPage.go_down();
-    			dictionaryPage.go_right();
-    			
-    			int new_score = Integer.parseInt(dictionaryPage.get_score_value());
-//    			System.out.println("new score is " + new_score);
-    			
-    			if (old_score == new_score ){
-//    				System.out.println("new score is " + new_score);
-//   		if (i%30 == 0){
-    			dictionaryPage.go_left();
-//    		if (i%50 ==0 )	
-    			dictionaryPage.go_up();
-    		}
-    	elapsedTime=(new Date()).getTime() - startTime;	
-//    	System.out.println("elapsedTime is" + elapsedTime);
-    	
-    	}
-    	System.out.println("final score is " + old_score);
-    	
-    }  
-    @Step
-    public  void walk_2 (){
+    public  void walk (){
     	
     	long startTime = System.currentTimeMillis();
     	long elapsedTime=0;
@@ -92,7 +61,7 @@ public class EndUserSteps extends ScenarioSteps {
 //    			System.out.println("new score is " + new_score);
 //    			
     		if (old_score == new_score && old_score > 0 ){
-//   				System.out.println("new score is in if  " + new_score);   	
+////   				System.out.println("new score is in if  " + new_score);   	
     			dictionaryPage.go_up();
     		}else{
     			old_score = new_score;
