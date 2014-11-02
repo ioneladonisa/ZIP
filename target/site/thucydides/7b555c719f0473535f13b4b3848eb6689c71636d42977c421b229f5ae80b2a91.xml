@@ -1,0 +1,20 @@
+<acceptance-test-run title="Test2048" name="test2048" steps="2" successful="2" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="81328" timestamp="2014-11-02T19:47:20.688+02:00">
+  <user-story id="TestersClub.PlayGame2Test" name="Play game2 test" path="TestersClub"/>
+  <tags>
+    <tag name="Play game2 test" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="5053">
+    <screenshots>
+      <screenshot image="984c98c00a71a904fba0ff7990df06c0_NONE.png"/>
+      <screenshot image="5a8876b709d4ff561e4dea4d8eb4cc6f_NONE.png"/>
+    </screenshots>
+    <description>Is the home page</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="61960">
+    <screenshots>
+      <screenshot image="04129cca8c1a6e0da36a981a340847cb_NONE.png"/>
+      <screenshot image="c957ee394b0871707e61a6bd4b5a9ffb_NONE.png"/>
+    </screenshots>
+    <description>Walk</description>
+  </test-step>
+</acceptance-test-run>

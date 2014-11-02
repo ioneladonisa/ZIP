@@ -11,10 +11,10 @@ import net.thucydides.junit.runners.ThucydidesRunner;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.*;
-
-
 
 import TestersClub.steps.EndUserSteps;
 
@@ -37,8 +37,9 @@ public class PlayGameTest {
     	System.setProperty("webdriver.firefox.bin", "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe");
 //    	System.setProperty("webdriver.chrome.driver","D:\\boot\\chromedriver_win32\\chromedriver.exe");
 //    	webdriver = new FirefoxDriver();
-    	webdriver.manage().window().maximize();
-    	
+//    	webdriver.manage().window().maximize();
+    	webdriver.manage().window().setSize(new Dimension(768, 768));
+    	webdriver.manage().window().setPosition(new Point(0,0));
     }
 
 
