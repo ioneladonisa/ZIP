@@ -46,30 +46,24 @@ public class EndUserSteps extends ScenarioSteps {
     	int new_score = 0;
     	
     	
-    	while (elapsedTime < 60000){
-//    		old_score = Integer.parseInt(dictionaryPage.get_score_value());
-//        	System.out.println("old score: " + old_score);
-    	
-    			
+    	while (elapsedTime < 60000){  			
     			dictionaryPage.go_right();
     			dictionaryPage.go_down();
     			    			
     			dictionaryPage.go_left();
     			dictionaryPage.go_down();
 			
-    		new_score = Integer.parseInt(dictionaryPage.get_score_value());
-//    			System.out.println("new score is " + new_score);
-//    			
+    		new_score = Integer.parseInt(dictionaryPage.get_score_value());    
+    		
     		if (old_score == new_score && old_score > 0 ){
-////   				System.out.println("new score is in if  " + new_score);   	
     			dictionaryPage.go_up();
     		}else{
     			old_score = new_score;
     		}
     	elapsedTime= System.currentTimeMillis() - startTime;	
-//    	System.out.println("elapsedTime is" + elapsedTime);
     	}
-    	System.out.println("final score is " + new_score);
+    	System.out.println("walk: final score is " + new_score);
     }
    
+
 }

@@ -13,8 +13,10 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <thucydides.version>0.9.268</thucydides.version>
-        <webdriver.driver>firefox</webdriver.driver>
+         <webdriver.driver>firefox</webdriver.driver>
         <selenium.setSpeed>0</selenium.setSpeed>
+       
+   
     </properties>
 
     <dependencies>

@@ -15,10 +15,11 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.*;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 import TestersClub.steps.EndUserSteps;
 
-//@Story(Application.Search.SearchByKeyword.class)
+
 @RunWith(ThucydidesRunner.class)
 @Concurrent(threads="2")
 public class PlayGameTest {
@@ -35,20 +36,17 @@ public class PlayGameTest {
     @Before
     public void setUp() throws Exception {
     	System.setProperty("webdriver.firefox.bin", "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe");
-//    	System.setProperty("webdriver.chrome.driver","D:\\boot\\chromedriver_win32\\chromedriver.exe");
-//    	webdriver = new FirefoxDriver();
-//    	webdriver.manage().window().maximize();
-    	webdriver.manage().window().setSize(new Dimension(768, 768));
-    	webdriver.manage().window().setPosition(new Point(0,0));
+
+    	
+//    	webdriver.manage().window().setSize(new Dimension(768, 768)); --used for running with 2 browsers
+//    	webdriver.manage().window().setPosition(new Point(0,0));  -- used for running with 2 browsers
     }
 
 
     @Test
     public void test() {
        endUser.is_the_home_page();
-       
+       webdriver.manage().window().maximize();
        endUser.walk();
-    }
-
-   
-} 
+      }
+	} 
